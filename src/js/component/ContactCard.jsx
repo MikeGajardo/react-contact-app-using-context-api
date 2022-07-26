@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { Context } from "/workspace/react-hello-webapp/src/js/store/appContext.js";
 
 export const ContactCard = (props) => {
@@ -23,9 +24,11 @@ export const ContactCard = (props) => {
           <button onClick={() => actions.deleteContact(props.id)}>
             <i className="fas fa-trash-alt btn" aria-hidden="true"></i>
           </button>
-          <button>
+          <Link to={`/edit-contact/${props.id}`}>
+            <button>
             <i className="fas fa-edit btn" aria-hidden="true"></i>
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

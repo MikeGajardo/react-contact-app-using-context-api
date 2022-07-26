@@ -7,6 +7,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { AddContact } from "./views/AddContact.js";
+import { EditContact } from "./views/EditContact";
 import { ContactsMain } from "./views/ContactsMain.js";
 
 import { Navbar } from "./component/navbar";
@@ -27,6 +28,7 @@ const Layout = () => {
 					<Switch>
 						<Route exact path="/" component={ ContactsMain } />
 						<Route exact path="/add" component={ AddContact } />
+						<Route exact path="/edit-contact/:id" component={ EditContact } />
 					</Switch>
 					<Footer />
 				</ScrollToTop>

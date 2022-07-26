@@ -56,6 +56,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 				})
 					.catch(error => console.log(error));
 			},
+
+			editContact: (contact, id) => {
+				fetch('https://assets.breatheco.de/apis/fake/contact/' + id , {
+					method: "PUT",
+					body: JSON.stringify(contact),
+					headers: {
+					  "Content-Type": "application/json",
+					},
+				})
+					.then(resp => resp.json())
+					.then(data => {
+						console.log(data); 
+						getData();
+				})
+					.catch(error => console.log(error));
+			}
 		}
 	};
 }	
