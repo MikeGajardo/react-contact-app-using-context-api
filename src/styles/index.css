@@ -1,3 +1,35 @@
 /* 
     General Styles
 */
+.add-container {
+    width: 800px;
+    height: 800px;
+    margin: auto;
+} 
+
+.form-group {
+    padding-bottom: 20px;
+}
+
+.list-group-item {
+    width: 1000px;
+    height: 1000px;  
+}
+
+.contact-card {
+    width: 1000px;
+    height: 250px;
+}
+
+.contact-text {
+    width: 500px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;    
+    border-radius: 50%;
+}
+
+.card-icons {
+}
