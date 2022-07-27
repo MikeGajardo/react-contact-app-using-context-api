@@ -2,13 +2,14 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { AddContact } from "./views/AddContact.js";
 import { EditContact } from "./views/EditContact";
 import { ContactsMain } from "./views/ContactsMain.js";
+// import { ContactsHome } from "./views/ContactsHome.js";
+import { Home } from "/workspace/react-hello-webapp/src/js/views/home.js";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";

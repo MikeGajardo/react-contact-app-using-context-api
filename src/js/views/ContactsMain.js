@@ -1,10 +1,18 @@
-import React, { useContext }  from 'react'
+import React, { useContext, useEffect, useState }  from 'react'
 import { Link } from "react-router-dom";
 import { Context } from "/workspace/react-hello-webapp/src/js/store/appContext.js"
 import ContactCard from '/workspace/react-hello-webapp/src/js/component/ContactCard.jsx';
 
 export const ContactsMain = () => {
-  const { store } = useContext(Context);
+  const { store, actions } = useContext(Context);
+  const [contacts, setContacts] = useState([])
+
+  useEffect(() => {
+    actions.getContacts();
+  }, []);
+  useEffect(() => {
+    setContacts(store.contacts)
+  }, [store.contacts]);
 
   return (
     <>
@@ -15,7 +23,8 @@ export const ContactsMain = () => {
           </Link>
           </button>
        </div>
-         {store.contacts.map((info, index) => {
+       <div>
+         {contacts.map((info, index) => {
           return (
             <ContactCard
                 key={index}
@@ -27,6 +36,7 @@ export const ContactsMain = () => {
             />
           );
          })}
+        </div>
     </>
   );
 };

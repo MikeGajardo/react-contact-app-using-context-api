@@ -16,18 +16,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 			contacts: [],
 		},
 		actions: {
-			// getContacts: () => {
-			// 	const store = getStore();
-			// 	fetch("https://assets.breatheco.de/apis/fake/contact/agenda/MikeyGFunkalicious", {
-			// 		method: "GET",
-			// 		headers: {
-			// 		"Content-Type": "application/json"
-			// 		}
-			// 		})
-			// 		.then(resp => resp.json())
-			// 		.then(data => setStore({ contacts: data }))
-			// 		.catch(error => console.log(error));
-			// },
+			getContacts: () => {
+				const store = getStore();
+				fetch("https://assets.breatheco.de/apis/fake/contact/agenda/MikeyGFunkalicious", {
+					method: "GET",
+					headers: {
+					"Content-Type": "application/json"
+					}
+					})
+					.then(resp => resp.json())
+					.then(data => setStore({ contacts: data }))
+					.catch(error => console.log(error));
+			},
 
 			submitContact: (newContact) => {
 			fetch("https://assets.breatheco.de/apis/fake/contact/", {
@@ -38,7 +38,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				},
 			  })
 			    
-			  .then(response=>response.status ===200 ? getData():"")
+			  .then(response=>response.status === 200 ? getData():"")
 			  .catch((error) => console.log("error", error));
 			},
 
