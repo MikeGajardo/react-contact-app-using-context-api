@@ -12,7 +12,6 @@ import { ContactsMain } from "./views/ContactsMain.js";
 import { Home } from "/workspace/react-hello-webapp/src/js/views/home.js";
 
 import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
 
 
 //create your first component
@@ -25,13 +24,11 @@ const Layout = () => {
 		<div>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
-					<Navbar />
 					<Switch>
 						<Route exact path="/" component={ ContactsMain } />
 						<Route exact path="/add" component={ AddContact } />
 						<Route exact path="/edit-contact/:id" component={ EditContact } />
 					</Switch>
-					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>

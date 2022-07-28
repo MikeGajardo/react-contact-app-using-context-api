@@ -83,7 +83,7 @@ export const EditContact = () => {
                 }
               }}
               type="submit"
-              className="btn btn-primary form-control ">
+              className="btn btn-success form-control ">
               save
             </button>
             <Link className="mt-3 w-100 text-center" to="/">or get back to contacts</Link>

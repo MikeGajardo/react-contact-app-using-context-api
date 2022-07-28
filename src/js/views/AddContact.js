@@ -33,7 +33,7 @@ export const AddContact = () => {
 
   
     return (
-    <div className="add-container">
+    <div className="add-container text-white">
       <div>
         <h1 className="text-center mt-5">Add a new contact</h1>
         <form>
@@ -93,7 +93,7 @@ export const AddContact = () => {
               }
             }}
             type="submit"
-            className="btn btn-primary form-control ">
+            className="btn btn-success form-control ">
             save
           </button>
           <Link className="mt-3 w-100 text-center" to="/">or get back to contacts</Link>

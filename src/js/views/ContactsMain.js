@@ -16,14 +16,14 @@ export const ContactsMain = () => {
 
   return (
     <>
-      <div>
-        <button className="btn btn-success">
-        <Link className="btn btn-success" to="/add">
+      <div className="text-white">
+        <button className="btn btn-success top-cta">
+        <Link className="btn btn-success top-cta" to="/add">
           Add New Contact
           </Link>
           </button>
        </div>
-       <div>
+       <div className="text-white">
          {contacts.map((info, index) => {
           return (
             <ContactCard

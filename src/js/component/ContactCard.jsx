@@ -5,7 +5,7 @@ import { Context } from "/workspace/react-hello-webapp/src/js/store/appContext.j
 export const ContactCard = (props) => {
   const { actions } = useContext(Context);
   return (
-    <div className="card contact-card m-auto p-3">
+    <div className="card text-white bg-dark contact-card m-auto p-3">
       <div className="details d-flex">
         <img
           className="profile-pic mx-3"
