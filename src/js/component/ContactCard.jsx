@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Context } from "/workspace/react-hello-webapp/src/js/store/appContext.js";
+import { Context } from "../store/appContext";
 
 export const ContactCard = (props) => {
   const { actions } = useContext(Context);

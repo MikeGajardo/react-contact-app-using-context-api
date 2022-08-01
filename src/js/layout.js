@@ -9,7 +9,7 @@ import { AddContact } from "./views/AddContact.js";
 import { EditContact } from "./views/EditContact";
 import { ContactsMain } from "./views/ContactsMain.js";
 // import { ContactsHome } from "./views/ContactsHome.js";
-import { Home } from "/workspace/react-hello-webapp/src/js/views/home.js";
+import { Home } from "./views/home.js";
 
 import { Navbar } from "./component/navbar";
 

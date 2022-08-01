@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState }  from 'react'
 import { Link } from "react-router-dom";
-import { Context } from "/workspace/react-hello-webapp/src/js/store/appContext.js"
-import ContactCard from '/workspace/react-hello-webapp/src/js/component/ContactCard.jsx';
+import { Context } from "../store/appContext"
+import ContactCard from '../component/ContactCard.jsx';
 
 export const ContactsMain = () => {
   const { store, actions } = useContext(Context);
